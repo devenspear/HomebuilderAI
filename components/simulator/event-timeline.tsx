@@ -150,7 +150,7 @@ export default function EventTimeline({ events, fires, onEventClick, onFireClick
       {/* Event Detail Modal */}
       {selectedEvent && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-          <div className="bg-white dark:bg-black/90 border border-white/20 rounded-2xl p-6 max-w-md w-full backdrop-filter backdrop-blur-xl shadow-2xl">
+          <div className="bg-white dark:bg-slate-900/95 border border-slate-200 dark:border-white/20 rounded-2xl p-6 max-w-md w-full backdrop-filter backdrop-blur-xl shadow-2xl">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-primary">Event Details</h3>
               <Button variant="ghost" size="sm" onClick={() => setSelectedEvent(null)}>
@@ -182,7 +182,7 @@ export default function EventTimeline({ events, fires, onEventClick, onFireClick
       {/* Fire Detail Modal */}
       {selectedFire && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-          <div className="bg-white dark:bg-black/90 border border-orange-400/30 rounded-2xl p-6 max-w-md w-full backdrop-filter backdrop-blur-xl shadow-2xl">
+          <div className="bg-white dark:bg-slate-900/95 border border-slate-200 dark:border-orange-400/30 rounded-2xl p-6 max-w-md w-full backdrop-filter backdrop-blur-xl shadow-2xl">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-primary">Automation Details</h3>
               <Button variant="ghost" size="sm" onClick={() => setSelectedFire(null)}>

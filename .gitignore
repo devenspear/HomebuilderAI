@@ -45,3 +45,4 @@ pnpm-debug.log*
 
 # Runtime files
 .pnpm-debug.log
+.vercel

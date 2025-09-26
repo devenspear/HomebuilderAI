@@ -13,7 +13,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('dark')
+  const [theme, setTheme] = useState<Theme>('light')
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   // Prevent hydration mismatch
   if (!mounted) {
-    return <div className="min-h-screen bg-slate-900">{children}</div>
+    return <div className="min-h-screen bg-white">{children}</div>
   }
 
   return (
@@ -54,7 +54,7 @@ export function useTheme() {
   if (context === undefined) {
     // Return default values for SSR
     return {
-      theme: 'dark' as Theme,
+      theme: 'light' as Theme,
       toggleTheme: () => {},
       setTheme: () => {}
     }

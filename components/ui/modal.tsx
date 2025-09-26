@@ -54,12 +54,12 @@ export default function Modal({
       />
       <div className={clsx(
         'relative w-full rounded-2xl border shadow-2xl',
-        'border-white/20 bg-white dark:border-white/20 dark:bg-black/90',
+        'border-slate-200 bg-white dark:border-white/20 dark:bg-slate-900/95',
         'backdrop-filter backdrop-blur-xl',
         sizes[size]
       )}>
         {(title || showCloseButton) && (
-          <div className="flex items-center justify-between p-6 border-b border-white/20 dark:border-white/20">
+          <div className="flex items-center justify-between p-6 border-b border-slate-200 dark:border-white/20">
             {title && <h2 className="text-lg font-semibold text-primary">{title}</h2>}
             {showCloseButton && (
               <Button variant="ghost" size="sm" onClick={onClose}>

@@ -1,0 +1,7 @@
+{
+  "name": "homebuilder-ai-public",
+  "public": true,
+  "buildCommand": "next build",
+  "devCommand": "next dev --port $PORT",
+  "installCommand": "pnpm install"
+}

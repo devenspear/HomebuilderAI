@@ -74,7 +74,7 @@ export default function TermCard({ term, onComplete, isCompleted = false }: Term
               onClick={() => setCurrentStep('explainer')}
               className={`px-3 py-1 rounded-lg ${
                 currentStep === 'explainer'
-                  ? 'bg-sky-500/20 text-sky-300 font-medium'
+                  ? 'bg-sky-500/20 text-sky-700 dark:text-sky-300 font-medium'
                   : 'text-secondary hover:text-primary'
               }`}
             >
@@ -85,7 +85,7 @@ export default function TermCard({ term, onComplete, isCompleted = false }: Term
               onClick={() => setCurrentStep('quiz')}
               className={`px-3 py-1 rounded-lg ${
                 currentStep === 'quiz'
-                  ? 'bg-sky-500/20 text-sky-300 font-medium'
+                  ? 'bg-sky-500/20 text-sky-700 dark:text-sky-300 font-medium'
                   : 'text-secondary hover:text-primary'
               }`}
               disabled={currentStep === 'explainer'}
@@ -97,7 +97,7 @@ export default function TermCard({ term, onComplete, isCompleted = false }: Term
               onClick={() => setCurrentStep('action')}
               className={`px-3 py-1 rounded-lg ${
                 currentStep === 'action'
-                  ? 'bg-sky-500/20 text-sky-300 font-medium'
+                  ? 'bg-sky-500/20 text-sky-700 dark:text-sky-300 font-medium'
                   : 'text-secondary hover:text-primary'
               }`}
               disabled={!quizCompleted}
@@ -130,16 +130,16 @@ export default function TermCard({ term, onComplete, isCompleted = false }: Term
           {currentStep === 'quiz' && (
             <div className="space-y-4">
               <h3 className="font-semibold mb-4 text-primary">Quick Quiz</h3>
-              <div className="p-4 bg-white/10 dark:bg-white/10 rounded-xl border border-white/30">
-                <p className="mb-4 text-primary font-medium">{term.quiz[0].question}</p>
+              <div className="p-4 bg-slate-100 dark:bg-white/10 rounded-xl border border-slate-200 dark:border-white/30">
+                <p className="mb-4 text-slate-900 dark:text-white font-medium">{term.quiz[0].question}</p>
                 <div className="space-y-2">
                   {term.quiz[0].answers.map((answer, index) => (
                     <label
                       key={index}
                       className={`block p-3 rounded-lg border cursor-pointer transition-all ${
                         selectedAnswer === index
-                          ? 'border-sky-400 bg-sky-400/20 text-white font-medium'
-                          : 'border-white/30 hover:border-white/50 hover:bg-white/10 text-white'
+                          ? 'border-sky-400 bg-sky-400/20 text-sky-900 dark:text-sky-100 font-medium'
+                          : 'border-slate-200 dark:border-white/30 hover:border-slate-300 dark:hover:border-white/50 hover:bg-slate-100/50 dark:hover:bg-white/10 text-slate-900 dark:text-white'
                       }`}
                     >
                       <input
