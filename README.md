@@ -1,13 +1,27 @@
-# HomebuilderAI Interactive — Next.js Scaffold
+# HomebuilderAI Interactive Demo
 
-A Claude/Cursor-friendly starter to build an interactive lab for Aiglish™, AI Frames, and the AI Sales Flow™.
+A complete Next.js application showcasing interactive learning modules for Aiglish™, AI Frames, and the AI Sales Flow™. Built with Claude Code as proof of concept for Myers Barnes Associates.
+
+## 🚀 Live Demo
+- **Local Development**: `http://localhost:3002`
+- **Features**: 8 complete modules with interactive components
+- **Status**: Production-ready with TypeScript, ESLint compliant
 
 ## Quickstart
 ```bash
-pnpm i # or npm i / yarn
-pnpm dev # http://localhost:3000
+pnpm install
+pnpm dev # starts on http://localhost:3002
+pnpm build # production build
+pnpm lint # code quality check
 ```
-> Uses Next 14 + Tailwind. No DB required for the demo.
+
+## ✨ Key Features
+- **Responsive Design**: Apple iOS-inspired glass morphism UI
+- **Theme System**: Dynamic dark/light mode switching
+- **Mobile Restrictions**: Desktop-optimized experience
+- **Interactive Learning**: 90-second explainers, quizzes, actionable steps
+- **Real-time Simulation**: Buyer event timeline with automation triggers
+- **AI Tools**: Visibility audit, lead scoring, content generation
 
 ## What’s inside
 - `/app` — Next App Router pages
