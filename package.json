@@ -1,7 +1,16 @@
 {
   "name": "homebuilderai-interactive",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./components/*": "./components/*",
+    "./app/dashboard/*": "./app/dashboard/*",
+    "./lib/*": "./lib/*",
+    "./data/*": "./data/*",
+    "./styles": "./app/globals.css"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
