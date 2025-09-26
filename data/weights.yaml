@@ -1,0 +1,33 @@
+weights:
+  view_plan: 3
+  zoom_lot: 5
+  download_brochure: 4
+  chat_message: 7
+  cta_click: 8
+  return_visit: 6
+  schedule_tour: 10
+  pricing_inquiry: 9
+  customization_request: 8
+  timeline_inquiry: 9
+  financing_question: 7
+  repeat_visitor: 5
+
+thresholds:
+  AAA: 80
+  A: 60
+  B: 40
+  C: 0
+
+descriptions:
+  view_plan: "Viewed a floorplan page"
+  zoom_lot: "Used lot map zoom feature"
+  download_brochure: "Downloaded pricing or plan materials"
+  chat_message: "Initiated chat conversation"
+  cta_click: "Clicked primary call-to-action"
+  return_visit: "Returned within 7 days"
+  schedule_tour: "Requested property tour"
+  pricing_inquiry: "Asked about pricing"
+  customization_request: "Inquired about customizations"
+  timeline_inquiry: "Asked about construction timeline"
+  financing_question: "Inquired about financing options"
+  repeat_visitor: "Multiple visits in 30 days"

@@ -1,0 +1,62 @@
+- id: revisit_plan_3x_48h
+  name: "Repeated Plan Views"
+  if: "count(view_plan on same plan within 48h) >= 3"
+  then:
+    - "send_email: seq_design_consult.step1"
+    - "osc_handoff"
+  deltas: { signalLock: 12, commitment: 6, leadScore: 15 }
+  description: "Buyer viewed same plan 3+ times in 48 hours"
+
+- id: brochure_download_premium
+  name: "Premium Content Download"
+  if: "download_brochure && document_type == 'pricing_sheet'"
+  then:
+    - "send_email: pricing_follow_up"
+    - "tag: price_sensitive"
+  deltas: { signalLock: 8, commitment: 10, leadScore: 12 }
+  description: "Downloaded pricing information - high purchase intent"
+
+- id: lot_zoom_multiple
+  name: "Lot Investigation"
+  if: "count(zoom_lot within 24h) >= 2"
+  then:
+    - "send_sms: lot_availability_check"
+    - "schedule: osc_callback_2h"
+  deltas: { signalLock: 15, commitment: 8, leadScore: 18 }
+  description: "Multiple lot views indicate location decision-making"
+
+- id: chat_timeline_urgent
+  name: "Timeline Inquiry"
+  if: "chat_message && intent == 'timeline_inquiry'"
+  then:
+    - "osc_handoff_immediate"
+    - "send_email: move_in_timeline"
+  deltas: { signalLock: 20, commitment: 15, leadScore: 25 }
+  description: "Asked about timeline - ready to move forward"
+
+- id: return_visitor_engaged
+  name: "High Engagement Return"
+  if: "return_visit && time_on_site > 300 && pages_viewed >= 5"
+  then:
+    - "send_email: personalized_recommendations"
+    - "tag: highly_engaged"
+  deltas: { signalLock: 10, commitment: 5, leadScore: 10 }
+  description: "Spent significant time browsing - serious interest"
+
+- id: cta_schedule_tour
+  name: "Tour Request"
+  if: "cta_click && button == 'Schedule Tour'"
+  then:
+    - "osc_handoff_immediate"
+    - "send_email: tour_confirmation"
+  deltas: { signalLock: 25, commitment: 20, leadScore: 30 }
+  description: "Requested tour - high commitment action"
+
+- id: luxury_customization
+  name: "Customization Interest"
+  if: "chat_message && intent == 'customization'"
+  then:
+    - "schedule: design_consultant_callback"
+    - "send_email: customization_guide"
+  deltas: { signalLock: 18, commitment: 12, leadScore: 22 }
+  description: "Asked about customization - serious luxury buyer"

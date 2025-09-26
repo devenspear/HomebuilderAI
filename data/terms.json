@@ -1,0 +1,102 @@
+[
+  {
+    "id": "aiglish",
+    "title": "Aiglish™",
+    "oneLine": "Shared language to run AI like operators.",
+    "explainer90s": "Aiglish is a specialized vocabulary for sales teams to communicate precisely about AI tools and automations. Instead of saying 'the chatbot thing,' you say 'MarvelBot.' Instead of 'website stuff,' you say 'AI Frames.' This clarity eliminates confusion, speeds training, and ensures everyone—from OSCs to managers—speaks the same language when deploying AI solutions.",
+    "fieldAnalogy": "Like how pilots use aviation terminology ('roger,' 'mayday,' 'approach') for safety and precision, sales teams need Aiglish for AI deployment clarity.",
+    "oneActionToday": "Replace one vague AI term in your next team meeting with its precise Aiglish equivalent.",
+    "quiz": [
+      {
+        "question": "What's the main benefit of using Aiglish?",
+        "answers": [
+          "Eliminates confusion and creates shared understanding",
+          "Makes you sound more technical",
+          "Impresses clients with jargon",
+          "Reduces the need for training"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "ai_sales_flow",
+    "title": "AI Sales Flow™",
+    "oneLine": "Micro-behaviors trigger automations, building Signal Lock and Commitment.",
+    "explainer90s": "Traditional sales funnels are linear. AI Sales Flow is dynamic—every micro-behavior (page view, lot zoom, brochure download) triggers specific automations that increase Signal Lock and Commitment scores. When someone views 3 floorplans and downloads pricing, that's not just 'interest'—it's a 15-point Signal Lock increase triggering your inventory alert sequence.",
+    "fieldAnalogy": "Like a GPS that recalculates your route based on traffic, AI Sales Flow adjusts messaging based on buyer behaviors in real-time.",
+    "oneActionToday": "Identify one micro-behavior on your website that should trigger an automated response.",
+    "quiz": [
+      {
+        "question": "What makes AI Sales Flow different from traditional funnels?",
+        "answers": [
+          "It's completely automated",
+          "It responds dynamically to micro-behaviors",
+          "It only works with AI chatbots",
+          "It replaces human sales reps"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "signal_lock",
+    "title": "Signal Lock",
+    "oneLine": "Behavioral evidence that someone is actively shopping.",
+    "explainer90s": "Signal Lock measures how many buying signals someone has demonstrated. Viewing one floorplan = weak signal. Downloading pricing, comparing lots, AND returning within 7 days = strong Signal Lock. Each behavior adds points. At 70+ points, automation fires. Unlike lead scores based on demographics, Signal Lock tracks actual shopping behaviors that predict purchase intent.",
+    "fieldAnalogy": "Like a smoke detector that gets more sensitive as more smoke appears, Signal Lock intensifies your sales response as buying signals accumulate.",
+    "oneActionToday": "List 3 behaviors on your site that indicate active shopping, then assign point values to each.",
+    "quiz": [
+      {
+        "question": "What does Signal Lock measure?",
+        "answers": [
+          "Demographics and contact information",
+          "Time spent on website pages",
+          "Behavioral evidence of active shopping",
+          "Social media engagement"
+        ],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "commitment",
+    "title": "Commitment",
+    "oneLine": "Behavioral evidence someone is narrowing toward a decision.",
+    "explainer90s": "Commitment tracks decision-making progression. Early browsing = low Commitment. But when someone bookmarks specific lots, downloads move-in guides, or asks about financing, Commitment increases. Unlike Signal Lock (which measures shopping), Commitment measures decision-making. High Signal Lock + High Commitment = priority lead for immediate OSC handoff.",
+    "fieldAnalogy": "Like wedding planning—looking at venues is Signal Lock, booking a venue is Commitment.",
+    "oneActionToday": "Identify one behavior that shows someone is moving from browsing to deciding.",
+    "quiz": [
+      {
+        "question": "How does Commitment differ from Signal Lock?",
+        "answers": [
+          "Commitment is more important than Signal Lock",
+          "Signal Lock measures shopping, Commitment measures deciding",
+          "They measure the same thing",
+          "Commitment only applies to repeat visitors"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "marvelbot",
+    "title": "MarvelBot™",
+    "oneLine": "Purpose-built sales bot trained on homebuilding scenarios.",
+    "explainer90s": "Generic chatbots frustrate buyers with irrelevant responses. MarvelBot is trained specifically on homebuilding: floorplan questions, lot availability, financing options, appointment booking. It knows when to engage (high Signal Lock) and when to hand off to OSCs (appointment requests, financing questions). Think specialized sales rep, not generic customer service.",
+    "fieldAnalogy": "Like having a knowledgeable sales associate who never sleeps, takes sick days, or forgets product details.",
+    "oneActionToday": "Write down 3 questions buyers commonly ask that a bot should handle automatically.",
+    "quiz": [
+      {
+        "question": "What makes MarvelBot different from generic chatbots?",
+        "answers": [
+          "It's powered by more advanced AI",
+          "It's trained specifically on homebuilding scenarios",
+          "It never hands off to humans",
+          "It works 24/7"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

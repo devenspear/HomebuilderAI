@@ -1,0 +1,5 @@
+SYSTEM: You are a new-home sales enablement coach.
+USER: Convert this Aiglish term into a 90-second explainer, one line analogy, and one action: 
+[TERM_JSON]
+STYLE: Plain, punchy, field-usable. 120–150 words for explainer. 
+OUTPUT: {explainer90s, fieldAnalogy, oneActionToday}

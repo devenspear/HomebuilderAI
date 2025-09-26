@@ -1,0 +1,140 @@
+[
+  {
+    "id": "move_in_ready_push",
+    "name": "Move-In Ready Push",
+    "description": "Convert inventory browsers into immediate buyers with urgency-driven messaging and clear incentives.",
+    "presetScenario": "urgent-timeline",
+    "estimatedTime": "30 minutes",
+    "difficulty": "beginner",
+    "thresholds": {
+      "return_visit": 2,
+      "zoom_lot": 1,
+      "download_brochure": 1
+    },
+    "sequenceTemplate": "inventory_clearance_v1",
+    "kpiTargets": {
+      "appointments": "+15%",
+      "reply_rate": "+20%",
+      "conversion_time": "-40%"
+    },
+    "modules": ["simulator", "drips", "scoring"],
+    "steps": [
+      {
+        "step": 1,
+        "title": "Configure Simulator",
+        "description": "Set up urgent timeline scenario with inventory-focused events",
+        "action": "Load preset scenario and adjust thresholds for quick move-in behaviors"
+      },
+      {
+        "step": 2,
+        "title": "Generate Urgency Sequence",
+        "description": "Create 5-touch sequence emphasizing move-in timeline and limited inventory",
+        "action": "Use Drips Generator with inventory urgency template"
+      },
+      {
+        "step": 3,
+        "title": "Adjust Lead Scoring",
+        "description": "Weight inventory-related behaviors higher for immediate follow-up",
+        "action": "Increase weights for lot views, brochure downloads, and timeline inquiries"
+      },
+      {
+        "step": 4,
+        "title": "Test & Deploy",
+        "description": "Validate the complete flow and export configurations",
+        "action": "Run simulation, test drip sequence, export scoring config"
+      }
+    ]
+  },
+  {
+    "id": "first_time_buyer_nurture",
+    "name": "First-Time Buyer Nurture",
+    "description": "Guide hesitant first-time buyers through education and confidence building.",
+    "presetScenario": "first-timer-journey",
+    "estimatedTime": "45 minutes",
+    "difficulty": "intermediate",
+    "thresholds": {
+      "view_plan": 3,
+      "pricing_inquiry": 1,
+      "financing_question": 1
+    },
+    "sequenceTemplate": "education_series_v1",
+    "kpiTargets": {
+      "engagement": "+25%",
+      "education_completion": "70%",
+      "consultation_bookings": "+12%"
+    },
+    "modules": ["glossary", "drips", "bot-studio"],
+    "steps": [
+      {
+        "step": 1,
+        "title": "Educational Foundation",
+        "description": "Ensure team understands key Aiglish terms for first-time buyer conversations",
+        "action": "Complete Glossary Lab focus on financing and process terms"
+      },
+      {
+        "step": 2,
+        "title": "Educational Drip Series",
+        "description": "Build 12-touch educational sequence addressing common first-time buyer concerns",
+        "action": "Generate nurture sequence focused on financing, process, and confidence building"
+      },
+      {
+        "step": 3,
+        "title": "Configure MarvelBot",
+        "description": "Train bot to recognize and address first-time buyer questions with empathy",
+        "action": "Add intents for financing fears, process questions, and down payment concerns"
+      },
+      {
+        "step": 4,
+        "title": "Validate & Launch",
+        "description": "Test the complete educational journey and handoff processes",
+        "action": "Simulate buyer journey, test bot responses, validate nurture sequence"
+      }
+    ]
+  },
+  {
+    "id": "luxury_buyer_acceleration",
+    "name": "Luxury Buyer Acceleration",
+    "description": "Fast-track high-value prospects with premium service and customization focus.",
+    "presetScenario": "luxury-shopper",
+    "estimatedTime": "35 minutes",
+    "difficulty": "advanced",
+    "thresholds": {
+      "customization_request": 1,
+      "premium_lot_view": 1,
+      "design_consultation": 1
+    },
+    "sequenceTemplate": "luxury_concierge_v1",
+    "kpiTargets": {
+      "consultation_rate": "+30%",
+      "customization_interest": "+40%",
+      "close_rate": "+18%"
+    },
+    "modules": ["simulator", "scoring", "bot-studio", "audit"],
+    "steps": [
+      {
+        "step": 1,
+        "title": "Premium Scoring Model",
+        "description": "Configure scoring to prioritize luxury buyer behaviors and fast-track high-value leads",
+        "action": "Adjust weights for customization requests, premium lot views, and design inquiries"
+      },
+      {
+        "step": 2,
+        "title": "Luxury Bot Training",
+        "description": "Train MarvelBot to recognize luxury intent and route to design consultants",
+        "action": "Add premium intents and configure immediate handoff for customization requests"
+      },
+      {
+        "step": 3,
+        "title": "High-Touch Automation",
+        "description": "Create personalized sequence for luxury prospects with concierge-level service",
+        "action": "Generate premium drip sequence with design focus and consultant introductions"
+      },
+      {
+        "step": 4,
+        "title": "Experience Audit",
+        "description": "Ensure website presents premium experience worthy of luxury buyers",
+        "action": "Run audit focusing on premium presentation and customization signals"
+      }
+    ]
+  }
+]
